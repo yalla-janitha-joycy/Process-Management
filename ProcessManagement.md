@@ -1,7 +1,7 @@
 # Process Management
 
 ## demonstrate the use of fork() 
-c
+```c
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/types.h>
@@ -34,10 +34,10 @@ int main()
 
         return 0;
 }
-
+```
 ## execvp() 
 
-c
+```c
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/types.h>
@@ -70,10 +70,10 @@ int main()
         return 0;
 }
 
-
+```
 ## create a child process using fork() and print its PID.
 
-c
+```c
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/wait.h>
@@ -106,9 +106,9 @@ int main()
         return 0;
 }
 
-
+```
 ##  create multiple child processes using fork() and display their PIDs.
-c
+```c
 #include<stdio.h>
 #include<sys/wait.h>
 #include<unistd.h>
@@ -141,9 +141,9 @@ int main()
         return 0;
 }
 
-
+```
 ## create a zombie process 
-c
+```c
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/types.h>
@@ -173,10 +173,10 @@ int main()
         }
         return 0;
 }
-
+```
 ## waitpid().
 
-c
+```c
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/wait.h>
@@ -211,10 +211,10 @@ int main()
         return 0;
 }
 
-
+```
 ##  create a daemon process. 
 
-c
+```c
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -268,10 +268,10 @@ int main()
         }
         return 0;
 }
-
+```
 ##  demonstrate the use of the system() 
 
-c
+```c
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/types.h>
@@ -286,10 +286,10 @@ int main()
         printf("System call execcuted successfully!\n");
         return 0;
 }
-
+```
 ##  create a process using fork() and pass arguments to the child process. 
 
-c
+```c
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/wait.h>
@@ -325,10 +325,12 @@ int main()
         return 0;
 
 }
+```
 
+```
 ## execvpe() 
 
-c
+```c
 #define _GNU_SOURCE
 #include<unistd.h>
 #include<stdio.h>
@@ -368,10 +370,10 @@ int main()
         }
         return 0;
 }
-
+```
 ## create a process group and change its process group ID (PGID). 
 
-c
+```c
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -430,9 +432,9 @@ int main()
         }
         return 0;
 }
+```
 
-
-##  process synchronization using the fork() and wait() system calls. 
+##  Write a C program to demonstrate process synchronization using the fork() and wait() system calls. 
 ```c
 #include<stdio.h>
 #include<sys/wait.h>
